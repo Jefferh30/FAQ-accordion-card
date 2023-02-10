@@ -16,34 +16,51 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 100px 60px;
 }
 
 .main-container{
-    max-width: 1000px;
+    max-width: 960px;
     display: flex;
+    height: 600px;
     background-color: white;
     border-radius: 20px;
+    margin-left: 40px;
 }
 
 .image-column{
     width: 50%;
 }
 
-.faq-column{
-    width: 50%;
-}
-
-.bg-pattern-d, .illustration-woman-d{
+.hide-overflow{
     overflow: hidden;
-}
-.bg-pattern-d img{
-    width: 200%;
-    transform: translate(-20%, -20%);
+    height: 100%;
 }
 
-.illustration-woman-d img{
-    width: 130%;
-    transform: translate(-20%, -10%);
+.faq-column{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 70px 100px 70px 30px;
+}
+
+.bg-pattern-d{
+    width: 220%;
+    margin-top: -310px;
+    margin-left: -630px;
+}
+
+.illustration-woman-d{
+    width: 105%;
+    position: relative;
+    top: -640px;
+    left: -80px;
+}
+
+.illustration-box{
+    width: 40%;
+    position: relative;
+    top: -360px;
+    left: -94px;
 }
 
 @media only screen and (min-width: 980px){
