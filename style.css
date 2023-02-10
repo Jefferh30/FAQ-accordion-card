@@ -1,3 +1,62 @@
-.attribution { font-size: 11px; text-align: center; }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background: linear-gradient(0deg, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%);
+   
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    max-width: 1000px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.image-column{
+    width: 50%;
+}
+
+.faq-column{
+    width: 50%;
+}
+
+.bg-pattern-d, .illustration-woman-d{
+    overflow: hidden;
+}
+.bg-pattern-d img{
+    width: 200%;
+    transform: translate(-20%, -20%);
+}
+
+.illustration-woman-d img{
+    width: 130%;
+    transform: translate(-20%, -10%);
+}
+
+@media only screen and (min-width: 980px){
+    .bg-pattern-m{
+        display: none;
+    }
+    .illustration-woman-m{
+        display: none;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; display: block;}
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
