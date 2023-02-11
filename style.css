@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 html{
     font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 body{
@@ -20,9 +23,9 @@ main{
 }
 
 .main-container{
-    max-width: 960px;
+    max-width: 1000px;
     display: flex;
-    height: 600px;
+    height: 550px;
     background-color: white;
     border-radius: 20px;
     margin-left: 40px;
@@ -40,27 +43,68 @@ main{
 .faq-column{
     box-sizing: border-box;
     width: 50%;
-    padding: 70px 100px 70px 30px;
+    padding: 70px 90px 70px 30px;
 }
 
 .bg-pattern-d{
-    width: 220%;
+    width: 1056px;
     margin-top: -310px;
     margin-left: -630px;
 }
 
 .illustration-woman-d{
-    width: 105%;
+    width: 505px;
     position: relative;
     top: -640px;
-    left: -80px;
+    left: -90px;
 }
 
 .illustration-box{
-    width: 40%;
+    width: 192px;
     position: relative;
-    top: -360px;
+    top: -315px;
     left: -94px;
+}
+
+.question-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question-heading img, .faq-column p{ 
+    margin-right: 15px;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 0.95rem;
+    color: hsl(237, 12%, 33%);
+    font-weight: 400;
+    margin: 20px 0 20px 0;
+}
+
+h3:hover{
+    color: hsl(14, 88%, 65%);
+}
+p{
+    font-size: 0.8rem;
+    color: hsl(240, 6%, 50%);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.faq-column p{
+    display: none;
+}
+
+hr{
+    border-color: hsl(240deg 5% 91% / 26%);
 }
 
 @media only screen and (min-width: 980px){
@@ -76,4 +120,5 @@ main{
 .attribution { font-size: 11px; text-align: center; display: block;}
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
 
