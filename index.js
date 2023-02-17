@@ -1,13 +1,9 @@
-const questionHeadings = document.getElementsByClassName('question-heading');
-const questionHeadingsArray = Array.from(questionHeadings); // convert to array
 
-const questionContainers = document.querySelectorAll('.question p');
+const questionHeadings = document.querySelectorAll('.question-heading');
 
-for (let i = 0; i < questionHeadings.length; i++){
-     
-    questionHeadings[i].addEventListener('click', () => {
+questionHeadings.forEach((heading) => {
+  heading.addEventListener('click', () => {
     // get the content element for this question heading
-    console.log('working');
     const content = heading.nextElementSibling;
     
     // toggle the display property of the content element
@@ -17,4 +13,4 @@ for (let i = 0; i < questionHeadings.length; i++){
       content.style.display = "block";
     }
   });
-}
+});
