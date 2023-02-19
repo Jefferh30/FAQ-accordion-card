@@ -5,11 +5,10 @@ questionHeadings.forEach((heading) => {
   heading.addEventListener('click', () => {
     //toggle the display of all other elements to none
     questionHeadings.forEach(element => {
+      //toggle the display of all other elements to none
       element.nextElementSibling.style.display = "none";
-    });
 
-    //set all arrows to default position
-    questionHeadings.forEach(element => {
+      //set all arrows to default position
       element.children[1].style.transform = "none";
     });
 
